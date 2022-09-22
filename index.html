@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Document</title>
+    <script type="text/javascript">
+        function obtenerdatos()
+        {
+            var nombre = document.getElementById('nombre').value;
+            document.registro.nombreobtenido.value = nombre;
+
+        }
+    </script>
+    <script type="text/javascript">
+       /* function convertir()
+        {
+            var valore = parseInt(document.getElementById("valor").value);
+            var resultado = 0;
+            var dolar = 6.94;
+            var euro = 4.85;
+            if(document.getElementById("uno").checked)
+            {
+                resultado = valore / dolar;
+                alert("El cambio de bolivianos a dolares es: $" + resultado.toFixed);
+
+            }
+            else if(document.getElementById("dos").checked)
+            {
+                resultado = valore / euro;
+                alert("El cambio de bolivianos a Euros es:" + resultado.toFixed);
+
+            }
+            else{
+                alert("tienes que completar todos los requerimientos")
+            }
+        }*/
+        function convertir()
+        {
+
+            var pes = (document.convertidor.pesos.value)*1;
+            if(pes==0)
+            {
+                alert("no ha llenado el espacio de pesos")
+            }
+            else
+            {
+
+            
+            var tot = pes / 6.94;
+            tot = tot.toFixed(2);
+            document.convertidor.dolar.value = tot;
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="./img/logo.png" alt="logo de la empresa">
+            <H2>FARMAELIAS</H2>
+        </a>
+        <nav>
+            <a href="" class="nav-link">INICIO</a>
+            <a href="" class="nav-link">NOSOTROS</a>
+            <a href="" class="nav-link">SERVICIOS</a>
+            <a href="" class="nav-link">PROMOCIONES</a>
+        </nav>
+            <form action="" name="registro">
+                <table>
+                    <tr>
+                        <td style="color: white;">Nombre:</td><td><input type="text" name="nombre" id="nombre"></td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align: center;"><input style="background:orange;" type="button" name="btn" value="Iniciar sesion" onclick="obtenerdatos()"></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+
+                        <td style="padding-left: 70px; color: white;">BIENVENIDO <input  style="background: #04086E; border: 0; color: white;" type="text" name="nombreobtenido" id="nombreobtenido"></td>
+                    </tr>
+                </table>
+            </form>
+        
+    </header>
+    <main>
+        <div>
+            <img src="./img/4.jpg" alt="">
+        </div>
+        <div>
+            <h1>SERVICIOS</h1>
+            <div id="servicios">
+                <h4>TRADICION</h4>
+                <div id="section">
+                <section id="section1">
+                    <img src="./img/trabajamos.png" alt="">
+                    <h5>TRABAJAMOS POR USTEDES</h4>
+                    <P>
+                        Contamos con un stock completo de vacunas para diferentes patologías
+                        y trabajamos sin pausa por mejorar el servicio que ofrecemos a nuestros
+                        clientes, por eso implantamos el servicio de Vacunatorio en cada una de
+                        nuestras Sucursales. Dichos establecimientos cuentan con Profesionales
+                        calificados para aplicar e informar sobre las vacunas necesarias y lograr
+                        una salud integral en nuestra sociedad.
+                    </P>
+                </section>
+                <section id="section2">
+                    <img src="./img/online.jpg" alt="">
+                    <h5>SERVICIOS ONLINE</h5>
+                        <p>Nuestro sitio web, está siendo desarrollado con la finalidad de
+                           facilitar la compra de cualquier producto, y hacerlo llegar hasta
+                           el domicilio dónde Ud. lo requiera. Estamos innovando servicios de
+                           atención online, delivery y consultas en línea que permitirán estar
+                           cada día más cerca de todos, con la Calidad que nos caracteriza.</p>
+                </section>
+                <section id="section3">
+                    <img src="./img/consultenos.png" alt="">
+                    <h5>CONSULTANOS ESTAMOS PARA AYUDARTE</h5>
+                    <p>
+                        Ante el crecimiento de la demanda por parte de nuestros clientes,
+                        urge la necesidad de informar de forma oportuna todo lo referido a 
+                        la salud y el buen uso de la medicación. Por esto creamos un portal
+                        abierto a nuestros clientes para recibir sus consultas y hacerles llegar
+                        de forma oportuna una repuesta profesional que cubra las necesidades que
+                        tengan en lo referido a la salud.
+                    </p>
+                </section>
+                </div>
+            </div>
+        </div>
+            
+    </main>
+    <footer>
+        <div>
+            <h1>NOSOTROS</h1>
+        </div>
+        <div id="nosotros">
+            <h4>TRADICION</h4>
+            <div id="noso">
+                <section id="noso1">
+                    <img src="./img/img2.jpg" alt="">
+                    <h5>LOS MEJORES PRECIOS</h5>
+                    Nos consideramos como la cadena de farmacias con los mejores precios de  nuestra región, conocemos las necesidades de  nuestros clientes
+                </section>
+                <section id="noso2">
+                    <img src="./img/img3.jpg" alt="">
+                    <h5>CONSULTAS GRATIS</h5>
+                    seguros de que cada cliente piensa de manera diferente, por lo tanto consideramos una gran necesidad la información oportuna
+                </section>
+                <section id="noso3"> 
+                    <h3>INFORMACION</h3>
+                    <P>CENTRAL: Av. Belzu Nro 389</P>
+                    <p>TELF:4227090-4227095 ATENCION 24HRS</p>
+                    <h3>SUCURSALES</h3>
+                    <P>SUCURSAL ECOLOGICA: Av. Ecologica Esq. Daniel Salamanca</P>
+                    <p>SUCURSAL UYUNI: Av. Uyuni(Home Center)</p>
+                    <p>SUCURSAL MELCHOR: Av. Melchor Perez Nro 1508 Esq. Jesus Aguayo</p>
+                </section>
+                <section id="noso4">    
+                    <h3>CONVERSION DOLAR</h3>
+                    <form name="convertidor">
+                        <h2>convertidor <br> precio del dolar: 6.94</h2>
+                        <br>cuantos bolivianos tengo: <input type="text" name="pesos">
+                        <hr>
+                        <br>convertidos a dolares son: <input type="text" name="dolar">
+                        <br>
+                        <br><input type="button" value="CONVERTIR" onclick="convertir();">
+                      
+                    </form>
+                </section>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

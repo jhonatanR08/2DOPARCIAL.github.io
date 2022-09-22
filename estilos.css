@@ -1,0 +1,165 @@
+body
+{
+    font-family: sans-serif;
+    margin: 0;
+}
+a
+{
+    text-decoration: none;
+    color: white;
+}
+header{
+   display: flex;
+   min-height: 15vh;
+   background: #04086E;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+
+}
+
+.logo
+{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    
+}
+.logo img
+{
+    height: 50px;
+    margin-right: 20px;
+    width:100hv;
+}
+nav a
+{
+font-weight: 600;
+padding-right: 10px;
+}
+nav a:hover
+{
+color: orange;
+}
+@media (max-width:700px)
+{
+    header
+    {   
+        flex-direction: column;
+    }
+    nav
+    {
+        padding: 10px 0px;
+    }
+}
+h1
+{
+    text-align: center;
+}
+h4
+{
+    text-align: center;
+    border: black 2px solid;
+}
+section
+{
+    background: lightgray;
+}
+#servicios
+{
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+#servicios h1
+{
+    text-align: center;
+}
+#section
+{
+    
+    text-align: center;
+    display : flex;
+    flex-direction : row;
+}
+#section1
+{
+    
+    width: 100vh;
+    margin-right: 10px;
+    background: #D5E9FD;
+}
+#section1 img
+{
+    height: 50PX;
+    margin-top: 10PX;
+}
+#section2
+{
+       
+    width: 100vh;
+    margin-right: 10px;
+    background: #D5E9FD;
+}
+#section2 img
+{
+    
+    height: 50PX;
+    margin-top: 10PX;
+}
+#section3
+{
+    width: 100vh;
+    background: #D5E9FD;
+}
+#section3 img
+{
+    height: 50PX;
+    margin-top: 10PX;
+}
+#nosotros
+{
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+#noso
+{
+    
+    text-align: center;
+    display : flex;
+    flex-direction : row;
+}
+#noso1
+{
+    
+    width: 100vh;
+    margin-right: 10px;
+    background: #D5E9FD;
+}
+#noso2
+{
+    
+    width: 100vh;
+    margin-right: 10px;
+    background: #D5E9FD;
+}
+#noso3
+{
+    
+    width: 100vh;
+    margin-right: 10px;
+    background: #D5E9FD;
+}
+#noso4
+{
+    
+    width: 100vh;
+    background: #D5E9FD;
+}
+#nom
+{   
+    background: red;
+    color: white;
+}
